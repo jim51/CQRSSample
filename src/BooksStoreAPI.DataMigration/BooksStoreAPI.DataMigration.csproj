@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Scripts\Script00000-CreateTable.sql" />
+    <None Remove="Scripts\Script00002-AddColumnCoAuthor.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\Script00000-CreateTable.sql" />
+    <EmbeddedResource Include="Scripts\Script00002-AddColumnCoAuthor.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="dbup" Version="4.4.0" />
+  </ItemGroup>
+
+</Project>
