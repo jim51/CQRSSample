@@ -3,4 +3,4 @@ A sample .Net core 3.1 API implementing CQRS  pattern using Mediatr.This sample 
 Splitting the API into a Command vertical and a Query vertical helps optimize the write side seperately from the read side. Generally systems follow a "read many write once" paradigm and a generic optimization for both reads and writes is not ideal. On the read side the sample uses the same data store but in a real life application the data store can be split and optimized at the read and write sides. 
 
 Quick Whiteboard
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![CQRS Sample design](https://github.com/PradeepLoganathan/CQRSSample/blob/master/Whiteboard.png)
