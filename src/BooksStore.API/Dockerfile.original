@@ -6,9 +6,6 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
 COPY ["src/BooksStore.API/BookStoreApi.csproj", "src/BooksStore.API/"]
-COPY ["src/BooksStoreAPI.Application/BooksStoreAPI.Application.csproj", "src/BooksStoreAPI.Application/"]
-COPY ["src/BooksStoreAPI.Models/BooksStoreAPI.Models.csproj", "src/BooksStoreAPI.Models/"]
-COPY ["src/BookStoreAPI.Infrastructure/BookStoreAPI.Infrastructure.csproj", "src/BookStoreAPI.Infrastructure/"]
 RUN dotnet restore "src/BooksStore.API/BookStoreApi.csproj"
 COPY . .
 WORKDIR "/src/src/BooksStore.API"

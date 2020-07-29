@@ -1,7 +1,10 @@
-﻿namespace BooksStoreAPI.Application.Interfaces
+﻿using System;
+
+namespace BooksStoreAPI.Application.Interfaces
 {
-    public interface IUnitOfWork
+    public interface IUnitOfWork:IDisposable
     {
         IBooksRepository Books { get; }
+        int Complete();
     }
 }

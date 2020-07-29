@@ -26,7 +26,12 @@ namespace BooksStoreAPI.Application.Commands
         }
         public async Task<BookItemDto> Handle(AddBookCommand request, CancellationToken cancellationToken)
         {
-            await _unitOfWork.Books.Add(request.BookItemDto);
+            using (_unitOfWork)
+            {
+                await _unitOfWork.Books.Add(request.BookItemDto);
+                _unitOfWork.Complete();
+            } 
+            
             return null;//TODO: Automapper to map returning DTO object
         }
     }

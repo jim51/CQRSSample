@@ -18,7 +18,6 @@ namespace BookStoreAPI.Infrastructure.Repository
         {
             var book = await _context.BookItems.FindAsync(id);
             _context.BookItems.Remove(book);
-            await _context.SaveChangesAsync();
             return 1;
         }
 
@@ -26,14 +25,12 @@ namespace BookStoreAPI.Infrastructure.Repository
         {
             var book = await _context.BookItems.FindAsync(entity);
             this._context.Entry(book).CurrentValues.SetValues(entity);
-            await this._context.SaveChangesAsync();
             return 1;
         }
 
         public async Task<int> Add(BookItemDto entity)
         {
-            _context.BookItems.Add(entity);
-            await _context.SaveChangesAsync();
+            await _context.BookItems.AddAsync(entity);
             return 1;
         }
 
@@ -45,6 +42,12 @@ namespace BookStoreAPI.Infrastructure.Repository
         public async Task<IEnumerable<BookItemDto>> GetAll()
         {
             return await _context.BookItems.ToListAsync();
+        }
+
+        public async Task<bool> Save()
+        {
+            await _context.SaveChangesAsync();
+            return true;
         }
     }
 }

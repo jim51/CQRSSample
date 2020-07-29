@@ -10,5 +10,6 @@ namespace BooksStoreAPI.Application.Interfaces
         Task<int> Add(T entity);
         Task<int> Delete(int id);
         Task<int> Update(T entity);
+        Task<bool> Save();
     }
 }
