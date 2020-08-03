@@ -1,6 +1,6 @@
 # BookService Placeholder application
 
-This repository contains the bookservice placeholder app. This application is built to test the build aspects of the devops pipeline.
+This repository contains the bookservice sample app. This application is built to demonstrate CQRS pattern using Mediatr.
 
 #### Solution design
 The BookService solution has the following projects
