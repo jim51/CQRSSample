@@ -10,6 +10,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D61ADF88-07F7-4FEC-BB65-CB49E60367DF}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		Dockerfile = Dockerfile
+		Readme.md = Readme.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BooksStoreAPI.Models", "src\BooksStoreAPI.Models\BooksStoreAPI.Models.csproj", "{FC872ABE-4F88-46B6-A598-7AB5883BE06B}"
@@ -24,7 +26,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BooksStoreAPI.Application",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BooksStoreAPI.DataMigration", "src\BooksStoreAPI.DataMigration\BooksStoreAPI.DataMigration.csproj", "{1C88143F-3471-498F-AEDF-3F945541CD80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStoreAPI.Infrastructure", "src\BookStoreAPI.Infrastructure\BookStoreAPI.Infrastructure.csproj", "{F7E2A91E-78A5-462A-B007-F7BE919474B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStoreAPI.Infrastructure", "src\BookStoreAPI.Infrastructure\BookStoreAPI.Infrastructure.csproj", "{F7E2A91E-78A5-462A-B007-F7BE919474B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

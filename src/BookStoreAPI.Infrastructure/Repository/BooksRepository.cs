@@ -43,11 +43,5 @@ namespace BookStoreAPI.Infrastructure.Repository
         {
             return await _context.BookItems.ToListAsync();
         }
-
-        public async Task<bool> Save()
-        {
-            await _context.SaveChangesAsync();
-            return true;
-        }
     }
 }
