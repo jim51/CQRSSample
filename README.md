@@ -30,7 +30,7 @@ The BookStoreAPI.DataMigration project is reponsible to migrate and apply change
 Clone this repo to your local machine using 
 
 ```shell
-git clone https://dev.azure.com/YouiENC/rating/_git/BooksServiceSample
+git clone https://github.com/PradeepLoganathan/CQRSSample.git
 ```
 
 ## Executing locally
