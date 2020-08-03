@@ -47,7 +47,7 @@ docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=*Password@123*" -p 1433:1433 --nam
 sqlcmd -S .,1433 -U SA -P "*Password@123*"
 ```
 4. Build the application
-Run docker build in the BookstoreAPI project.
+Run docker build.
 ```shell
 Docker build .
 ```
